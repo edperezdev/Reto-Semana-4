@@ -18,6 +18,10 @@ h3 {
   font: bold 11px Arial;
 }
 
+h4 {
+  font: 11px Arial;
+}
+
 body {
   width: 70%;
   height: 100%;
@@ -67,9 +71,10 @@ header nav a {
   color: rgb(110, 99, 99);
   padding-bottom: 8px;
 }
-header nav a:hover{
-  color:rgb(149, 151, 21);
-  border-bottom:3px solid rgba(0, 116, 0, 0.692);
+
+header nav a:hover {
+  color: rgb(149, 151, 21);
+  border-bottom: 3px solid rgba(0, 116, 0, 0.692);
 }
 
 
@@ -176,4 +181,55 @@ header nav a:hover{
   height: 10px;
   width: 45%;
   border-radius: 8px;
+}
+
+/* Contacto */
+
+.contact {
+  height: 28rem;
+}
+
+.contact article {
+  display: flex;
+  margin-top: 30px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.contact form {
+  display: inline;
+  width: 60%;
+  border-right:2px solid rgba(128, 128, 128, 0.384);
+  padding-right:8px;
+}
+
+
+.contact textarea {
+  width: 90%;
+  height: 135px;
+
+}
+
+.datos h3 {
+  line-height: 70px;
+}
+
+.contact form h3 {
+  line-height: 40px;
+}
+
+.datos-llenar{
+  display:flex;
+}
+
+.datos-llenar div{
+  width:100%;
+}
+
+.datos-llenar input{
+  width:90%;
+}
+
+.datos{
+  padding-left:10px;
 }
