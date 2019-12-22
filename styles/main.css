@@ -11,7 +11,7 @@ body {
     rgb(255, 255, 255),
     rgb(238, 216, 15)
   );
-
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -76,6 +76,7 @@ header nav ul {
 header nav a {
   color: rgb(177, 162, 162);
   padding-bottom: 8px;
+  transition: all 0.3s ease-in;
 }
 
 header nav a:hover {
@@ -105,6 +106,7 @@ header nav a:hover {
   height: 140px;
   border-radius: 90px;
   border: 8px solid rgba(144, 158, 144, 0.432);
+  transition: all 0.3s ease-in-out;
 }
 
 .about figure img:hover {
@@ -139,14 +141,12 @@ header nav a:hover {
   padding: 10px;
 }
 
-.about ul li{
-  transition: all .2s ease-in-out;
+.about ul li {
+  transition: all 0.2s ease-in-out;
 }
-
 
 .about ul li:hover {
   transform: scale(1.5);
-  
 }
 
 /* Portafolio */
@@ -166,7 +166,7 @@ header nav a:hover {
   height: 150px;
   margin-bottom: 20px;
   border: 8px solid rgba(145, 134, 134, 0.432);
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .images-portafolio img:hover {
@@ -263,20 +263,26 @@ header nav a:hover {
   width: 90%;
 }
 
+.contact form input:focus,
+.contact form textarea:focus {
+  background-color: rgb(224, 224, 216);
+  box-shadow: 0px 5px 8px rgb(26, 27, 26);
+}
+
 .form-button {
   background-color: rgba(9, 112, 14, 0.726);
   color: white;
   font-family: monospace;
   margin-top: 20px;
-  height: 30px;
+  height: 35px;
   width: 120px;
+  border-radius: 10px;
   border: none;
 }
 
-.contact form input:focus,
-.contact form textarea:focus {
-  background-color: rgb(224, 224, 216);
-  box-shadow: 0px 5px 8px rgb(26, 27, 26);
+.form-button:hover {
+  box-shadow: inset -5px -5px 5px rgb(3, 65, 6);
+  border: 0.7px solid rgb(138, 123, 123);
 }
 
 /* Footer */
@@ -304,7 +310,6 @@ footer h3 {
   transition: all 0.5s ease-in-out;
 }
 
-.sticky:hover{
+.sticky:hover {
   transform: rotate(360deg);
-
 }
