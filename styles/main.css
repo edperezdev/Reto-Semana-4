@@ -1,4 +1,19 @@
 /* Globales */
+
+body {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  box-shadow: 8px 8px 10px rgb(110, 99, 99);
+  background: radial-gradient(
+    circle,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(238, 216, 15)
+  );
+
+}
+
 h1 {
   font: bolder 30px Lucida;
   color: white;
@@ -22,13 +37,6 @@ h4 {
   font: 11px Arial;
 }
 
-body {
-  width: 70%;
-  height: 100%;
-  margin: auto;
-  background-image: url(/images/css3-gradient-pattern.png);
-}
-
 section {
   background-color: white;
   border-right: 1px solid rgba(87, 74, 74, 0.514);
@@ -47,7 +55,6 @@ header {
   display: flex;
   width: 100%;
   height: 60px;
-  box-shadow: 5px 5px 5px rgb(110, 99, 99);
 }
 
 header h1 {
@@ -58,7 +65,6 @@ header h1 {
 header nav {
   width: 50%;
   margin: auto;
-
 }
 
 header nav ul {
@@ -68,16 +74,15 @@ header nav ul {
 }
 
 header nav a {
-  color: rgb(110, 99, 99);
+  color: rgb(177, 162, 162);
   padding-bottom: 8px;
 }
 
 header nav a:hover {
-  color: rgb(149, 151, 21);
+  color: rgb(209, 212, 28);
+  font-weight: bolder;
   border-bottom: 3px solid rgba(0, 116, 0, 0.692);
 }
-
-
 
 /* About */
 .about {
@@ -95,21 +100,53 @@ header nav a:hover {
   margin-left: 20px;
 }
 
-.about p {
-  width: 70%;
-  margin: auto;
-  display: inline-block;
-}
-
 .about figure img {
   width: 140px;
   height: 140px;
   border-radius: 90px;
-  border: 8px solid rgba(144, 158, 144, 0.432)
+  border: 8px solid rgba(144, 158, 144, 0.432);
 }
 
 .about figure img:hover {
-  border: 8px solid rgba(9, 180, 18, 0.432)
+  border: 8px solid rgba(9, 180, 18, 0.432);
+}
+
+.about div {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about p {
+  width: 100%;
+  display: inline-block;
+  line-height: 20px;
+}
+.about ul {
+  display: flex;
+  width: 35%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.about ul li i {
+  font-size: 20px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.about ul li{
+  transition: all .2s ease-in-out;
+}
+
+
+.about ul li:hover {
+  transform: scale(1.5);
+  
 }
 
 /* Portafolio */
@@ -124,19 +161,20 @@ header nav a:hover {
   margin-top: 30px;
 }
 
-
 .images-portafolio img {
   width: 270px;
   height: 150px;
   margin-bottom: 20px;
   border: 8px solid rgba(145, 134, 134, 0.432);
+  transition: all .2s ease-in-out;
 }
 
 .images-portafolio img:hover {
-  border: 8px solid rgba(9, 180, 18, 0.432)
+  border: 8px solid rgba(9, 180, 18, 0.432);
+  transform: rotate(5deg);
 }
 
-/* Mis habilidads */
+/* Mis habilidades */
 
 .skills {
   height: 19.5rem;
@@ -145,29 +183,25 @@ header nav a:hover {
 .barras-skill {
   width: 100%;
   display: flex;
-  margin: auto;
-  position: relative;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 240px;
 }
 
 .divisor1 {
-  width: 5%;
+  width: 3%;
   margin-top: 40px;
-  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .divisor2 {
-  width: 45%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 35%;
   margin-top: 40px;
-}
-
-.divisor1 div {
-  margin-bottom: 15px;
-}
-
-.divisor2 div {
-  margin-bottom: 17.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .barras-skill .contenedor {
@@ -186,28 +220,27 @@ header nav a:hover {
 /* Contacto */
 
 .contact {
-  height: 28rem;
+  height: 30rem;
 }
 
 .contact article {
   display: flex;
   margin-top: 30px;
   width: 100%;
-  margin-left: 20px;
+  justify-content: space-around;
 }
 
 .contact form {
   display: inline;
   width: 60%;
-  border-right:2px solid rgba(128, 128, 128, 0.384);
-  padding-right:8px;
+  border-right: 2px solid rgba(128, 128, 128, 0.384);
+  padding-right: 13px;
 }
 
-
 .contact textarea {
-  width: 90%;
+  width: 95%;
   height: 135px;
-
+  resize: none;
 }
 
 .datos h3 {
@@ -218,18 +251,60 @@ header nav a:hover {
   line-height: 40px;
 }
 
-.datos-llenar{
-  display:flex;
+.datos-llenar {
+  display: flex;
 }
 
-.datos-llenar div{
-  width:100%;
+.datos-llenar div {
+  width: 100%;
 }
 
-.datos-llenar input{
-  width:90%;
+.datos-llenar input {
+  width: 90%;
 }
 
-.datos{
-  padding-left:10px;
+.form-button {
+  background-color: rgba(9, 112, 14, 0.726);
+  color: white;
+  font-family: monospace;
+  margin-top: 20px;
+  height: 30px;
+  width: 120px;
+  border: none;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  background-color: rgb(224, 224, 216);
+  box-shadow: 0px 5px 8px rgb(26, 27, 26);
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  margin-bottom: 70px;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+}
+
+footer h3 {
+  color: rgba(219, 199, 199, 0.664);
+  padding: 25px;
+}
+
+/* Imagen fixed */
+
+.sticky {
+  position: fixed;
+  bottom: 40px;
+  right: 70px;
+  transition: all 0.5s ease-in-out;
+}
+
+.sticky:hover{
+  transform: rotate(360deg);
+
 }

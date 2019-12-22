@@ -8,41 +8,47 @@
   <title>Portafolio</title>
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/main.css">
+  <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" data-auto-replace-svg="nest"></script>
 </head>
 
+<figure class="sticky"><a href=#header><img src="images/triforce.png"></figure></a>
+
 <body>
-  <header>
+  <div id="main" class="aver">
+  <header id="header">
     <h1>Edwin Pérez</h1>
     <nav>
       <ul>
         <li><a href=#>Sobre mí</a></li>
-        <li><a href=#Portafolio>Portafolio</a></li>
+        <li><a href=#portafolio>Portafolio</a></li>
         <li><a href=#skills>Mis habilidades</a></li>
         <li><a href=#contact>Contacto</a></li>
       </ul>
     </nav>
   </header>
-
-  <section class="about">
+  <section class="about" id="about">
     <h2>Sobre mí</h2>
     <article>
       <figure><img src="images/DhsRKlhUEAAc50O.jpg"></figure>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt neque sit quidem repellendus suscipit
+      <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt neque sit quidem repellendus suscipit
         incidunt, id alias illum rem dolorem mollitia modi quasi placeat qui necessitatibus blanditiis eum ex nostrum!
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corporis recusandae cumque, inventore
         tempore earum, repellendus quas reprehenderit quod facere porro dolores qui consequatur nobis dicta totam eaque
-        id animi.</p>
-      <ul>
-        <li><a href=#></a></li>
-        <li><a href=#></a></li>
-        <li><a href=#></a></li>
-        <li><a href=#></a></li>
-        <li><a href=#></a></li>
+        id animi.<p>
+        <ul>
+        <li><a href=#><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href=#><i class="fab fa-github-alt"></i></a></li>
+        <li><a href=#><i class="fab fa-twitter"></i></a></li>
+        <li><a href=#><i class="fab fa-instagram"></i></a></li>
       </ul>
+    </p>
+    </p>
+    </div>
+   
     </article>
   </section>
 
-  <section class="Portafolio" id="Portafolio">
+  <section class="Portafolio" id="portafolio">
     <h2>Portafolio</h2>
     <article class="images-portafolio">
       <div>
@@ -51,7 +57,7 @@
       </div>
       <div>
         <figure><img src="images/ocarina.jpg"></figure>
-        <figure><img src="images/majoras.png">
+        <figure><img src="images/majoras.png"></figure>
       </div>
       <div>
         </figure>
@@ -211,13 +217,13 @@
            <h3>Nombre</h3>
          </div>
          <div>
-          <input type="text">
+          <input type="text" pattern="[A-Za-z]+" required>
          </div>
         <div>
            <h3>Apellido</h3>
           </div>
         <div>
-        <input type="text">
+        <input type="text" pattern="[A-Za-z]+" required>
         </div>
     </div>
     <div>
@@ -225,18 +231,18 @@
         <h3>Teléfono</h3>
       </div>
        <div>
-          <input type="number">
+          <input type="text" maxlength="9" pattern="[0-9]+" required>
       </div>
       <div>
         <h3>Correo electrónico</h3>
       </div>
       <div>
-        <input type="email">
+        <input type="email" required>
       </div>
     </div>
     </div>
-      <div><h3>Deja tu mensaje</h3></div><div><textarea></textarea></div>
-      <button>Enviar</button>
+      <div><h3>Deja tu mensaje</h3></div><div><textarea required></textarea></div>
+      <button class="form-button">Enviar</button>
     </form>
     <div class="datos">
       <div>
@@ -259,9 +265,7 @@
 <h3>Desarrollado por PachaQtec</h3>
   </footer>
 
-
-
-
+</div>
 </body>
 
 </html>
