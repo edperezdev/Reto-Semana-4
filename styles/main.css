@@ -1,13 +1,3 @@
-/* Fuente para H1*/
-
-@font-face {
-  font-family: "Croissant One";
-  src: url("/fonts/CroissantOne-Regular.woff2") format("woff2"),
-    url("/fonts/CroissantOne-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* Globales */
 
 body {
@@ -321,5 +311,5 @@ footer h3 {
 }
 
 .fixed-triforce:hover {
-  transform: rotate(360deg);
+  transform: rotate(360deg); 
 }
